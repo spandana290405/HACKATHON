@@ -1,4 +1,0 @@
-﻿rule_id,rule_name,points_per_currency,min_spend,bonus_points
-L001,Base,1,0,0
-L002,Mid Spend Bonus,1,500,100
-L003,High Spend Bonus,1,1000,300
