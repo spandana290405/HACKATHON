@@ -9,10 +9,7 @@ create table Customers
  join_date date
 );
 
-copy Customers
-FROM 'C:\Users\routh\OneDrive\Desktop\cust.csv'
-DELIMITER ','
-CSV HEADER;
+\copy customers FROM 'data/customers.csv' CSV HEADER;
 
 select * from Customers
 
@@ -26,10 +23,7 @@ create table Products
  price numeric
 );
 
-copy Products
-FROM 'C:\Users\routh\OneDrive\Desktop\products.csv'
-DELIMITER ','
-CSV HEADER;
+\copy products FROM 'data/products.csv' CSV HEADER;
 
 -- 3) Saless
 
@@ -43,10 +37,7 @@ create table Saless
  total_amount numeric
 );
 
-copy Saless
-FROM 'C:\Users\routh\OneDrive\Desktop\sales.csv'
-DELIMITER ','
-CSV HEADER;
+\copy saless FROM 'data/sales.csv' CSV HEADER;
 
 -- 4) sales_items
 
@@ -60,10 +51,7 @@ create table sales_items
  unit_price numeric
 );
 
-copy sales_items
-FROM 'C:\Users\routh\OneDrive\Desktop\sales_items.csv'
-DELIMITER ','
-CSV HEADER;
+\copy sales_items FROM 'data/sales_items.csv' CSV HEADER;
 
 -- 5) store
 
@@ -75,10 +63,7 @@ create table store
  city char(50)
 );
 
-copy store
-FROM 'C:\Users\routh\OneDrive\Desktop\stores.csv'
-DELIMITER ','
-CSV HEADER;
+\copy store FROM 'data/store.csv' CSV HEADER;
 
 
 
@@ -93,10 +78,7 @@ create table loyalty
  bonus_points numeric
 );
 
-copy loyalty
-FROM 'C:\Users\routh\OneDrive\Desktop\loyalty.csv'
-DELIMITER ','
-CSV HEADER;
+\copy loyalty FROM 'data/loyalty.csv' CSV HEADER;
 
 -- Step 2:- Data quality checks
 
